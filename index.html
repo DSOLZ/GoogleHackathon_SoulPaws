@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--yall should be good now-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,14 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dog Adoption</title>
   <link rel="stylesheet" href="style.css">
+
   <script defer src="script.js"></script>
+  <script> 
+    window.chtlConfig = { chatbotId: "9928173638" } 
+  </script>
+  <script async data-id="9928173638" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+
 </head>
 <body>
 
   <!-- Top Navigation Menu -->
-  <header>
+  <header>  <!-- Centered Logo -->
     <nav class="navbar">
-      <div class="logo">Dog Adoption</div>
+        <div class="logo-text-container">
+            <img src="imgs/logo.png" alt="Soul Paws Logo" class="center-logo">
+            <h1 style="
+                font-family: 'Garamond';
+                font-size: 30px;
+                color: #00008B;
+                margin-left: 10px; /* Adjust space between logo and text */
+              ">
+              SOUL PAWS
+            </h1>
+        </div>
+        
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#adopt">Adopt a Dog</a></li>
@@ -27,28 +43,34 @@
   <!-- Main Section for Images/Infographics -->
   <section id="home" class="hero-section">
     <div class="hero-text">
-      <h1>Find Your New Best Friend</h1>
+      <h1>Don't Shop, Adopt!</h1>
       <p>Explore our gallery of lovable dogs ready for adoption</p>
     </div>
     <div class="hero-image">
-      <img src="imgs/golden-retriever-tongue-out.jpg" alt="Cute Dog" />
+      <img src="imgs/download.jpeg" alt="Cute Dog" />
     </div>
+
   </section>
 
   <!-- Adoptable Dogs Section -->
   <section id="adopt" class="adopt-section">
-    <h2>Adopt a Dog</h2>
+    <h2 style="padding-bottom: 10px;">Adopt a Dog</h2>
     <div class="dog-grid">
       <!-- Sample Dog Cards -->
       <div class="dog-card">
-        <img src="dog1.jpg" alt="Dog 1">
-        <h3>Buddy</h3>
-        <p>Friendly and energetic Labrador.</p>
+        <img src="imgs/chichi.jpeg" alt="Dog 1">
+        <h3 style="padding-top: 15px;">Buddy</h3>
+        <p>Friendly and energetic Chihuahua.</p>
       </div>
       <div class="dog-card">
-        <img src="dog2.jpg" alt="Dog 2">
+        <img src="imgs/dog2.jpg" alt="Dog 2">
         <h3>Bella</h3>
-        <p>Calm and affectionate Beagle.</p>
+        <p>Calm and affectionate Golden Retriever.</p>
+      </div>
+      <div class="dog-card">
+        <img src="imgs/hyperchihuahua.jpeg" alt="Dog 3">
+        <h3>Meow</h3>
+        <p>Beautiful specimen of a dog.</p>
       </div>
       <!-- Add more dog cards as needed -->
     </div>
@@ -71,14 +93,8 @@
     </form>
   </section>
 
-  <!-- Chatbot Section -->
-  <div id="chatbot">
-    <div id="chatbot-header" onclick="toggleChatbot()">Chat with us!</div>
-    <div id="chatbot-body" class="hidden">
-      <div id="chat-content"></div>
-      <input type="text" id="chat-input" placeholder="Type your message..." onkeydown="handleChat(event)">
-    </div>
-  </div>
+
+
 
   <!-- Footer -->
   <footer>
@@ -88,8 +104,9 @@
       <a href="#about">About Us</a> |
       <a href="#contact">Contact Us</a>
     </div>
-    <p>&copy; 2024 Dog Adoption. All rights reserved.</p>
+    <p>&copy; 2024 Soul Paws. All rights reserved.</p>
   </footer>
 
 </body>
+
 </html>
