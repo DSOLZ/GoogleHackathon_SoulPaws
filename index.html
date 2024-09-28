@@ -8,10 +8,8 @@
   <link rel="stylesheet" href="style.css">
 
   <script defer src="script.js"></script>
-  <script> 
-    window.chtlConfig = { chatbotId: "9928173638" } 
-  </script>
-  <script async data-id="9928173638" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+  <script> window.chtlConfig = { chatbotId: "9928173638" } </script>
+<script async data-id="9928173638" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 
 </head>
 <body>
@@ -78,19 +76,22 @@
 
   <!-- Contact Us Section -->
   <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+  
+  
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+  
+  
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+  
+  
+        <button><a href="form.html">Go to Form</a></button>
+      </form>
   </section>
 
 
@@ -107,6 +108,13 @@
     <p>&copy; 2024 Soul Paws. All rights reserved.</p>
   </footer>
 
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevent default form submission
+      window.location.href = 'form.html'; // Redirect to the questionnaire page
+    }
+  </script>
+  
 </body>
 
 </html>
