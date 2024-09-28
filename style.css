@@ -19,6 +19,19 @@ body {
   --text-color: #333;
 }
 
+/* Add this to your existing CSS */
+.logo-text-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .center-logo {
+    width: 70px; /* Adjust size as needed */
+    height: 70px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between logo and text */
+  }
+  
+
 /* Top Navigation Menu */
 header {
   background: var(--light-purple);
@@ -163,50 +176,6 @@ form button:hover {
   background-color: var(--dark-purple);
 }
 
-/* Chatbot Section */
-#chatbot {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-  background-color: var(--light-purple);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#chatbot-header {
-  background-color: var(--dark-purple);
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  text-align: center;
-}
-
-#chatbot-body {
-  display: none;
-  padding: 10px;
-  max-height: 300px;
-  overflow-y: auto;
-  background-color: white;
-}
-
-#chatbot-body.visible {
-  display: block;
-}
-
-#chat-content {
-  min-height: 200px;
-}
-
-#chat-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--light-purple);
-}
 
 /* Footer */
 footer {
