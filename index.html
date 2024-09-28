@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dog Adoption</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation Menu -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Dog Adoption</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#adopt">Adopt a Dog</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section for Images/Infographics -->
+  <section id="home" class="hero-section">
+    <div class="hero-text">
+      <h1>Find Your New Best Friend</h1>
+      <p>Explore our gallery of lovable dogs ready for adoption</p>
+    </div>
+    <div class="hero-image">
+      <img src="imgs/golden-retriever-tongue-out.jpg" alt="Cute Dog" />
+    </div>
+  </section>
+
+  <!-- Adoptable Dogs Section -->
+  <section id="adopt" class="adopt-section">
+    <h2>Adopt a Dog</h2>
+    <div class="dog-grid">
+      <!-- Sample Dog Cards -->
+      <div class="dog-card">
+        <img src="dog1.jpg" alt="Dog 1">
+        <h3>Buddy</h3>
+        <p>Friendly and energetic Labrador.</p>
+      </div>
+      <div class="dog-card">
+        <img src="dog2.jpg" alt="Dog 2">
+        <h3>Bella</h3>
+        <p>Calm and affectionate Beagle.</p>
+      </div>
+      <!-- Add more dog cards as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Chatbot Section -->
+  <div id="chatbot">
+    <div id="chatbot-header" onclick="toggleChatbot()">Chat with us!</div>
+    <div id="chatbot-body" class="hidden">
+      <div id="chat-content"></div>
+      <input type="text" id="chat-input" placeholder="Type your message..." onkeydown="handleChat(event)">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#home">Home</a> |
+      <a href="#adopt">Adopt</a> |
+      <a href="#about">About Us</a> |
+      <a href="#contact">Contact Us</a>
+    </div>
+    <p>&copy; 2024 Dog Adoption. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

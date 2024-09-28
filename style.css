@@ -1,0 +1,223 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Color scheme variables */
+:root {
+  --light-purple: #d8b4e2;
+  --dark-purple: #a87db9;
+  --complementary-blue: #b0e0e6;
+  --text-color: #333;
+}
+
+/* Top Navigation Menu */
+header {
+  background: var(--light-purple);
+  color: white;
+  padding: 1em 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section for high-resolution images/infographics */
+.hero-section {
+  background: var(--complementary-blue);
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  color: var(--dark-purple);
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adopt Section with Dog Cards */
+.adopt-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dog-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.dog-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.dog-card h3 {
+  margin-top: 15px;
+  color: var(--dark-purple);
+}
+
+.dog-card p {
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #fff;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--dark-purple);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background-color: var(--light-purple);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--dark-purple);
+}
+
+/* Chatbot Section */
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: var(--light-purple);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#chatbot-header {
+  background-color: var(--dark-purple);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+#chatbot-body {
+  display: none;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: white;
+}
+
+#chatbot-body.visible {
+  display: block;
+}
+
+#chat-content {
+  min-height: 200px;
+}
+
+#chat-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--light-purple);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-purple);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+}
