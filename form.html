@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Match Questionnaire</title>
+    <link rel="stylesheet" href="dog.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your Perfect Dog Match!</h1>
+        <form>
+            <h2>Preferred Dog Size</h2>
+            <label for="size">Select Size:</label>
+            <select id="size" name="size" required>
+                <option value="small">Small (6-20 lbs)</option>
+                <option value="medium">Medium (21-60 lbs)</option>
+                <option value="large">Large (60+ lbs)</option>
+            </select>
+
+            <h2>Preferred Personality Traits</h2>
+            <label>Loyal:</label>
+            <input type="checkbox" name="traits" value="loyal">
+            <label>Playful:</label>
+            <input type="checkbox" name="traits" value="playful">
+            <label>Friendly:</label>
+            <input type="checkbox" name="traits" value="friendly">
+            <label>Alert:</label>
+            <input type="checkbox" name="traits" value="alert">
+
+            <h2>How active are you daily?</h2>
+            <select id="activity-level" name="activity-level" required>
+                <option value="low">Low (couch potato)</option>
+                <option value="moderate">Moderate (occasional walks)</option>
+                <option value="high">High (daily exercise routines)</option>
+            </select>
+
+            <h2>Experience Level with Dogs</h2>
+            <select id="experience-level" name="experience-level" required>
+                <option value="beginner">Beginner (first-time dog owner)</option>
+                <option value="intermediate">Intermediate (some experience)</option>
+                <option value="experienced">Experienced (multiple dogs or training experience)</option>
+            </select>
+
+            <h2>Living Environment</h2>
+            <select id="living-environment" name="living-environment" required>
+                <option value="apartment">Apartment</option>
+                <option value="house-small-yard">House with Small Yard</option>
+                <option value="house-large-yard">House with Large Yard</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
